@@ -28,7 +28,6 @@ cards +=  `<div class= "col">
 <div class="card-body">
 <h5 class="card-title">Status: ${results[i].status}</h5>
 <h5 class="card-title">Species: ${results[i].species}</h5>
-<h5 class="card-title">${1+2}</h5>
 </div>
 </div>
 </div>

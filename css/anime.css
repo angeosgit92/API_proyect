@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header h1, .header h2 {
+    margin: 0;
+    padding: 0;
+}
+.header a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+.header a:hover {
+    text-decoration: underline;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.dataAlbum {
+    margin-top: 254px;
+}
+.pagination {
+    justify-content: center; /* Centra la paginación horizontalmente */
+    margin-top: 10px;
+}
+.btn {
+    font-size: 1rem; /* Asegura que el texto en los botones sea visible */
+    color: #ffffff; /* Asegura que el texto en los botones sea blanco */
+    background-color: #007bff; /* Color de fondo para los botones */
+    border: none; /* Elimina el borde por defecto */
+}
+.btn:hover {
+    background-color: #0056b3; /* Color de fondo en hover */
+}
+.form-control {
+
+}
