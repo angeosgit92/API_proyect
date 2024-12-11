@@ -9,12 +9,12 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   const query = document.getElementById("searchInput").value;
   currentQuery = query;
-  currentPage = 1; // Reset to the first page for a new search
+  currentPage = 1; // Volver a la primera página para una nueva búsqueda
   const api = `${BASE_URL}/anime?q=${query}&page=${currentPage}&limit=${ITEMS_PER_PAGE}`;
   getAnime(api);
 });
 
-// Function to fetch and render anime data
+// Función para obtener y renderizar datos de anime
 const getAnime = (api) => {
   fetch(api)
     .then((response) => response.json())
@@ -75,6 +75,6 @@ const changePage = (direction) => {
   getAnime(api);
 };
 
-// Initial fetch to display popular anime on load
+// Búsqueda inicial para mostrar anime popular al cargar
 const initialApi = `${BASE_URL}/anime?page=${currentPage}&limit=${ITEMS_PER_PAGE}`;
 getAnime(initialApi);

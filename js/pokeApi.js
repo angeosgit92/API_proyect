@@ -64,5 +64,5 @@ const pagination = (data) => {
     `;
 };
 
-// Call the function to fetch and render Pokémons
+// Llama a la función para buscar y renderizar Pokémons
 getPokemons(API_ENDPOINT);
